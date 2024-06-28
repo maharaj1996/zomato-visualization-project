@@ -3,11 +3,17 @@ import sqlite3
 import json
 import pickle
 
+
 app= Flask(__name__)
 
 
+@app.route('/')
+def homepage():
+    return render_template("home.html")
 
-
+@app.route("/restaurants")
+def restaurant():
+   return render_template("restaurant.html") 
 
 
 if __name__ == '__main__' :
