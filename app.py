@@ -17,7 +17,7 @@ def restaurant():
 
 
 
-@app.route('/contact-us', methods = ["GET","POST"])
+@app.route('/contact', methods = ["GET","POST"])
 def contactus():
     if request.method=='POST':
         name = request.form.get("name")
